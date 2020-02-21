@@ -1,30 +1,42 @@
+/* Applies to all */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Set background image */
 body {
-    background-color: #d9dcd6;
+    background-color: #dcd8d600;
+    background-image: url("bkg-2.jpg");
+    background-size:cover;
 }
 
+/* Defining headers shape, margin, padding, color,... */
 .header {
     padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #2a617c00;
     color: #ffffff;
 }
 
+/* Company name header  */
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    font-family: 'Lacquer' ;
+    color: #ffffff;
 }
 
+/* Company name header  */
 .header h1 .seo {
-    color:red; /* #d9dcd6;*/
+    color:red; 
 }
 
-.header div {
+/* Header navigator */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,50 +44,67 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+/* Header navigator */
+.header nav ul {
+    list-style-type:disc !important;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Header navigator color*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* paragraph font size */
 p {
     font-size: 16px;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+/* taken from bootstrap; changing radious */
+.carousel-inner {
+    border-radius: 200px;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
 }
 
+/* contains bootstrap; defining padding, margin, .... */
+.hero {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 200px;
+    padding: 0 5% 1% 5%;
+    margin: 5px;
+}
+
+ /* Positioning */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+ /* Positioning */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Description and for the headings (3 articles) */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Side description */
 .benefits {
+    border-radius: 25px;
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -83,7 +112,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color:rgb(0, 128, 87);
 }
 
 .benefit-sub {
@@ -103,12 +132,16 @@ p {
     max-width: 150px;
 }
 
+/* main headers in content class */
 .Company-Tasks {
+    margin: auto;
+    border-radius: 50px;
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 70px;
+    height: 355px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    text-align:center;
+    background-color: #0073bb87;
     color: #ffffff;
 }
 
@@ -122,13 +155,16 @@ p {
     font-size: 36px;
 }
 
+/* Class footer */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    color: #ffffff;
 }
 
 .footer h2 {
     font-size: 20px;
 }
+
